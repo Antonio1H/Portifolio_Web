@@ -44,6 +44,19 @@ nav a:hover {
     text-shadow: 0 0 10px #00ff00;
 }
 
+.icone-github {
+    width: 30px;
+    vertical-align: middle;
+    filter: invert(34%) sepia(84%) saturate(543%) hue-rotate(80deg) brightness(95%) contrast(90%); /* Aplica cor verde */
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.icone-github:hover {
+    transform: scale(1.1);
+    filter: invert(50%) sepia(100%) saturate(1000%) hue-rotate(80deg) brightness(100%) contrast(100%); /* Intensifica a cor ao passar o mouse */
+}
+
+
 section {
     padding: 40px 20px;
 }
