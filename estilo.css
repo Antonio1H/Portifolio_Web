@@ -1,6 +1,6 @@
 body {
-    background-color: #000;
-    color: #00ff00;
+    background: linear-gradient(135deg, #ff8c8c, #8cffff);
+    color: #ffffff;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -10,15 +10,15 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background-color: #111;
-    border-bottom: 2px solid #00ff00;
+    background-color: #2a2a2a;
+    border-bottom: 2px solid #ff8c8c;
 }
 
 .foto-perfil {
     width: 150px;
     border-radius: 50%;
     margin: 20px 0;
-    box-shadow: 0 0 15px #00ff00;
+    box-shadow: 0 0 10px #ff8c8c; /* Sombra mais suave */
 }
 
 nav ul {
@@ -33,35 +33,39 @@ nav li {
 }
 
 nav a {
-    color: #00ff00;
+    color: #ffffff;
     text-decoration: none;
     font-size: 18px;
-    transition: color 0.3s, text-shadow 0.3s;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #00cc00;
-    text-shadow: 0 0 10px #00ff00;
+    color: #ff8c8c;
 }
 
 .icone-github {
     width: 30px;
     vertical-align: middle;
-    filter: invert(34%) sepia(84%) saturate(543%) hue-rotate(80deg) brightness(95%) contrast(90%); /* Aplica cor verde */
-    transition: transform 0.3s, filter 0.3s;
+    transition: transform 0.3s;
 }
 
 .icone-github:hover {
     transform: scale(1.1);
-    filter: invert(50%) sepia(100%) saturate(1000%) hue-rotate(80deg) brightness(100%) contrast(100%); /* Intensifica a cor ao passar o mouse */
 }
-
 
 section {
     padding: 40px 20px;
+    background-color: rgba(42, 42, 42, 0.85);
+    margin: 20px;
+    border-radius: 10px;
 }
 
 h1, h2 {
     margin-bottom: 20px;
-    text-shadow: 0 0 10px #00ff00;
+    color: #ff8c8c;
+}
+
+p {
+    font-size: 16px;
+    color: #f0f0f0;
 }
