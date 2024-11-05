@@ -18,7 +18,7 @@ header {
     width: 150px;
     border-radius: 50%;
     margin: 20px 0;
-    box-shadow: 0 0 10px #ff8c8c; /* Sombra mais suave */
+    box-shadow: 0 0 10px #ff8c8c; 
 }
 
 nav ul {
@@ -68,4 +68,22 @@ h1, h2 {
 p {
     font-size: 16px;
     color: #f0f0f0;
+}
+
+/* Ícone de localização no canto superior direito */
+.localizacao-icone {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.icone-localizacao {
+    width: 20px;  
+    height: 20px;
+    transition: transform 0.3s;
+}
+
+.icone-localizacao:hover {
+    transform: scale(1.1);
 }
