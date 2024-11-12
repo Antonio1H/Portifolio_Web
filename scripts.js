@@ -1,7 +1,9 @@
 let senha = gerarSenha();
 const listaTentativas = document.getElementById("lista-tentativas");
-const respostaElemento = document.getElementById("resposta");
 const senhaElemento = document.getElementById("senha-correta");
+
+// Exibe a senha correta ao carregar a página
+senhaElemento.textContent = senha;
 
 function gerarSenha() {
     let senha = '';
@@ -14,13 +16,8 @@ function gerarSenha() {
     return senha;
 }
 
-function mostrarResposta() {
-    senhaElemento.textContent = senha; // Exibe a senha gerada
-    respostaElemento.style.display = "block"; // Mostra o elemento de resposta
-}
-
 function verificarPalpite(event) {
-    event.preventDefault(); // Previne o comportamento padrão do formulário
+    event.preventDefault(); // Impede o comportamento padrão do envio do formulário
 
     const palpite = document.getElementById("palpite").value;
     if (palpite.length !== 4 || isNaN(palpite)) {
@@ -32,7 +29,7 @@ function verificarPalpite(event) {
         alert("Parabéns! Você acertou a senha!");
         listaTentativas.innerHTML = ''; // Limpa tentativas anteriores
         senha = gerarSenha(); // Gera nova senha
-        mostrarResposta(); // Atualiza a senha correta exibida
+        senhaElemento.textContent = senha; // Atualiza a senha correta exibida
     } else {
         const resultado = compararSenha(palpite, senha);
         mostrarTentativa(palpite, resultado);
@@ -60,3 +57,4 @@ function mostrarTentativa(palpite, resultado) {
     itemLista.textContent = `Palpite: ${palpite} - ${resultado}`;
     listaTentativas.appendChild(itemLista);
 }
+

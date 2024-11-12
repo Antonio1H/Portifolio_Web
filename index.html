@@ -61,8 +61,8 @@
     </section>
     <section id="jogo-senha">
         <h2>Adivinhe a Senha</h2>
-        <button onclick="mostrarResposta()">Mostrar Resposta</button>
-        <p id="resposta" style="display: none; color: #ff8c8c;">A resposta é: <span id="senha-correta"></span></p>
+        <!-- Exibe a senha correta -->
+        <p style="color: #ff8c8c;">A resposta correta: <span id="senha-correta"></span></p>
     
         <form id="form-palpite" onsubmit="verificarPalpite(event)">
             <input type="text" id="palpite" placeholder="Digite seu palpite (4 dígitos)" required>
@@ -73,8 +73,6 @@
             <!-- Tentativas anteriores aparecerão aqui -->
         </ul>
     </section>
-    
-    
     
     <script src="scripts.js"></script>
 </body>
