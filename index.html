@@ -20,6 +20,7 @@
                     </a>
                 </li>
                 <li><a href="#contato">Contato</a></li>
+                <li><a href="#jogo-senha">Jogo Senha</a></li>
             </ul>
         </nav>
         <a href="https://www.google.com/maps?q=Venturosa,+Pernambuco" target="_blank" class="localizacao-icone">
@@ -58,6 +59,22 @@
             </a>
         </div>
     </section>
+    <section id="jogo-senha">
+        <h2>Adivinhe a Senha</h2>
+        <button onclick="mostrarResposta()">Mostrar Resposta</button>
+        <p id="resposta" style="display: none; color: #ff8c8c;">A resposta é: <span id="senha-correta"></span></p>
+    
+        <form id="form-palpite" onsubmit="verificarPalpite(event)">
+            <input type="text" id="palpite" placeholder="Digite seu palpite (4 dígitos)" required>
+            <button type="submit">Enviar Palpite</button>
+        </form>
+    
+        <ul id="lista-tentativas">
+            <!-- Tentativas anteriores aparecerão aqui -->
+        </ul>
+    </section>
+    
+    
     
     <script src="scripts.js"></script>
 </body>

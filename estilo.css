@@ -1,3 +1,5 @@
+/* estilo.css */
+
 body {
     background: linear-gradient(135deg, #ff8c8c, #8cffff);
     color: #ffffff;
@@ -70,7 +72,6 @@ p {
     color: #f0f0f0;
 }
 
-/* Ícone de localização no canto superior direito */
 .localizacao-icone {
     position: absolute;
     top: 20px;
@@ -88,7 +89,6 @@ p {
     transform: scale(1.1);
 }
 
-/* Estilo para a seção de Contato */
 #contato {
     padding: 40px 20px;
     background-color: rgba(42, 42, 42, 0.85);
@@ -119,3 +119,50 @@ p {
     transform: scale(1.1);
 }
 
+#jogo-senha {
+    padding: 40px 20px;
+    background-color: rgba(42, 42, 42, 0.85);
+    margin: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+#jogo-senha h2 {
+    color: #ff8c8c;
+}
+
+#form-palpite {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #ff8c8c;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff6c6c;
+}
+
+#lista-tentativas {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+    color: #ff8c8c;
+}
